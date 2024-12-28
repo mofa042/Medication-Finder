@@ -5,7 +5,6 @@
         "location": "صيدلية الرحمة",
         "category": "مسكنات",
         "dosage": "500 مجم مرتين يومياً",
-        "expiration_date": "2025-12-31",
         "availability": ["صيدلية الرحمة", "صيدلية الشفاء"],
         "alternatives": ["Tylenol", "Advil"]
     },
@@ -15,7 +14,6 @@
         "location": "صيدلية الشفاء",
         "category": "مسكنات",
         "dosage": "500 مجم ثلاث مرات يومياً",
-        "expiration_date": "2024-11-30",
         "availability": ["صيدلية الشفاء", "صيدلية الدواء"],
         "alternatives": ["Panadol", "Advil"]
     },
@@ -25,7 +23,6 @@
         "location": "صيدلية الدواء",
         "category": "مسكنات",
         "dosage": "400 مجم ثلاث مرات يومياً",
-        "expiration_date": "2024-10-15",
         "availability": ["صيدلية الدواء", "صيدلية الحياة"],
         "alternatives": ["Panadol", "Tylenol"]
     },
@@ -35,7 +32,6 @@
         "location": "صيدلية الحياة",
         "category": "مسكنات",
         "dosage": "250 مجم مرتين يومياً",
-        "expiration_date": "2026-01-20",
         "availability": ["صيدلية الحياة", "صيدلية الأمل"],
         "alternatives": ["Ibuprofen", "Aspirin"]
     },
@@ -45,7 +41,6 @@
         "location": "صيدلية الأمل",
         "category": "مسكنات",
         "dosage": "200 مجم ثلاث مرات يومياً",
-        "expiration_date": "2025-09-10",
         "availability": ["صيدلية الأمل", "صيدلية الهدى"],
         "alternatives": ["Naproxen", "Aspirin"]
     },
@@ -55,7 +50,6 @@
         "location": "صيدلية الهدى",
         "category": "مسكنات",
         "dosage": "100 مجم مرة يومياً",
-        "expiration_date": "2024-12-01",
         "availability": ["صيدلية الهدى", "صيدلية الرحمة"],
         "alternatives": ["Ibuprofen", "Naproxen"]
     },
@@ -65,7 +59,6 @@
         "location": "صيدلية الشفاء",
         "category": "مسكنات",
         "dosage": "50 مجم مرتين يومياً",
-        "expiration_date": "2025-08-05",
         "availability": ["صيدلية الشفاء", "صيدلية السلام"],
         "alternatives": ["Diclofenac", "Ibuprofen"]
     },
@@ -75,7 +68,6 @@
         "location": "صيدلية السلام",
         "category": "مسكنات",
         "dosage": "75 مجم مرتين يومياً",
-        "expiration_date": "2025-05-15",
         "availability": ["صيدلية السلام", "صيدلية الأمل"],
         "alternatives": ["Voltaren", "Ibuprofen"]
     },
@@ -85,7 +77,6 @@
         "location": "صيدلية الرحمة",
         "category": "مسكنات",
         "dosage": "200 مجم مرة يومياً",
-        "expiration_date": "2026-03-20",
         "availability": ["صيدلية الرحمة", "صيدلية الشفاء"],
         "alternatives": ["Ibuprofen", "Aspirin"]
     },
@@ -95,7 +86,6 @@
         "location": "صيدلية الدواء",
         "category": "مسكنات",
         "dosage": "500 مجم مرتين يومياً",
-        "expiration_date": "2025-01-31",
         "availability": ["صيدلية الدواء", "صيدلية الحياة"],
         "alternatives": ["Panadol", "Tylenol"]
     }
