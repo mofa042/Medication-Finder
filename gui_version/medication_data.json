@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Panadol",
+        "price": 10.0,
+        "location": "صيدلية الرحمة",
+        "category": "مسكنات",
+        "dosage": "500 مجم مرتين يومياً",
+        "availability": ["صيدلية الرحمة", "صيدلية الشفاء"],
+        "alternatives": ["Tylenol", "Advil"]
+    },
+    {
+        "name": "Tylenol",
+        "price": 12.0,
+        "location": "صيدلية الشفاء",
+        "category": "مسكنات",
+        "dosage": "500 مجم ثلاث مرات يومياً",
+        "availability": ["صيدلية الشفاء", "صيدلية الدواء"],
+        "alternatives": ["Panadol", "Advil"]
+    },
+    {
+        "name": "Advil",
+        "price": 15.0,
+        "location": "صيدلية الدواء",
+        "category": "مسكنات",
+        "dosage": "400 مجم ثلاث مرات يومياً",
+        "availability": ["صيدلية الدواء", "صيدلية الحياة"],
+        "alternatives": ["Panadol", "Tylenol"]
+    },
+    {
+        "name": "Naproxen",
+        "price": 18.0,
+        "location": "صيدلية الحياة",
+        "category": "مسكنات",
+        "dosage": "250 مجم مرتين يومياً",
+        "availability": ["صيدلية الحياة", "صيدلية الأمل"],
+        "alternatives": ["Ibuprofen", "Aspirin"]
+    },
+    {
+        "name": "Ibuprofen",
+        "price": 20.0,
+        "location": "صيدلية الأمل",
+        "category": "مسكنات",
+        "dosage": "200 مجم ثلاث مرات يومياً",
+        "availability": ["صيدلية الأمل", "صيدلية الهدى"],
+        "alternatives": ["Naproxen", "Aspirin"]
+    },
+    {
+        "name": "Aspirin",
+        "price": 8.0,
+        "location": "صيدلية الهدى",
+        "category": "مسكنات",
+        "dosage": "100 مجم مرة يومياً",
+        "availability": ["صيدلية الهدى", "صيدلية الرحمة"],
+        "alternatives": ["Ibuprofen", "Naproxen"]
+    },
+    {
+        "name": "Voltaren",
+        "price": 25.0,
+        "location": "صيدلية الشفاء",
+        "category": "مسكنات",
+        "dosage": "50 مجم مرتين يومياً",
+        "availability": ["صيدلية الشفاء", "صيدلية السلام"],
+        "alternatives": ["Diclofenac", "Ibuprofen"]
+    },
+    {
+        "name": "Diclofenac",
+        "price": 22.0,
+        "location": "صيدلية السلام",
+        "category": "مسكنات",
+        "dosage": "75 مجم مرتين يومياً",
+        "availability": ["صيدلية السلام", "صيدلية الأمل"],
+        "alternatives": ["Voltaren", "Ibuprofen"]
+    },
+    {
+        "name": "Celebrex",
+        "price": 30.0,
+        "location": "صيدلية الرحمة",
+        "category": "مسكنات",
+        "dosage": "200 مجم مرة يومياً",
+        "availability": ["صيدلية الرحمة", "صيدلية الشفاء"],
+        "alternatives": ["Ibuprofen", "Aspirin"]
+    },
+    {
+        "name": "Paracetamol",
+        "price": 7.0,
+        "location": "صيدلية الدواء",
+        "category": "مسكنات",
+        "dosage": "500 مجم مرتين يومياً",
+        "availability": ["صيدلية الدواء", "صيدلية الحياة"],
+        "alternatives": ["Panadol", "Tylenol"]
+    }
+]
