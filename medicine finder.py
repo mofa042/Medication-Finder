@@ -13,7 +13,7 @@ def load_medication_data(file_path):
     except FileNotFoundError:  # Handles if there is no file
         print(f"Error: The file {file_path} does not exist.")
         return []
-    except json.JSONDecodeError:
+    except json.JSONDecodeError:  # Handles if the file is corrupted
         print("Error: Failed to decode JSON from the file. Please check the file format.")
         return []
 
@@ -28,50 +28,63 @@ def search_medication(name, medications):
 
 # Display medication information
 def display_medication_info(medication):
-    print("\nMedication Details:")
+    print("Medication Details:")
     for key, value in medication.items():
         if isinstance(value, list):
-            print(f"{key.title()}: {', '.join(value)}")
+            print(
+                f"{key.title()}: {' - '.join(value)}"
+                )
         else:
-            print(f"{key.title()}: {value if value else 'N/A'}")
+            print(
+                f"{key.title()}: {str(value).rstrip('0').rstrip('.') if value else 'N/A'}",
+                  "L.E." if key.lower() == "price" else ""
+                )
 
 
-# Provide guidance for unavailable medications
+# Provide guidance for unavailable medications - if wanted -
 def handle_unavailable_medication(med_name):
-    print(f"The medication '{med_name}' is not available in the database.")
-    print("Would you like to receive guidance on how to find more information about it? (yes/no)\n")
+    print(
+        f"The medication '{med_name}' is not available in the database.",
+        "Would you like to receive guidance on how to find more information about it? (yes/no)",
+        sep="\n"
+        )
 
     user_input = input("Enter (yes or no)").strip().lower()
     if user_input in ["yes", "y", "sure"]:
-        print("Here are some suggestions to find information about the medication:",
-              "1. Visit your nearest pharmacy and consult a pharmacist.",
-              "2. Check reliable online sources such as official healthcare websites or medication databases.",
-              "3. Contact your healthcare provider for recommendations or alternatives.", sep="\n")
+        print(
+            "\nHere are some suggestions to find information about the medication:",
+            "1. Visit your nearest pharmacy and consult a pharmacist.",
+            "2. Check reliable online sources such as official healthcare websites or medication databases.",
+            "3. Contact your healthcare provider for recommendations or alternatives.",
+            sep="\n",
+            )
     else:
         print("Understood. Let us know if you need assistance with another medication.")
 
 
 # Main function to handle user input and search
 def main():
-    file_path = rf"{Path().resolve()}\medication_data.json"
+    file_path = rf"{Path(__file__).parent.resolve()}\medication_data.json"
     medications = load_medication_data(file_path)
 
     if not medications:
-        print("No medication data available. Please check the file path or contents.")
         return
 
     while True:
         print("\nEnter the name of the medication you want to search for (or type 'exit' to quit):\n")
         med_name = input("Enter Medication Name.").strip()
 
+        # Checks if the input is empty
         if not med_name:
-            print("Input cannot be empty. Please enter a valid medication name.")
+            print("Input cannot be empty. Please enter a valid medication name.\n")
             continue
 
+        # if input equals "exit" the code stops
         if med_name.lower() == "exit":
             print("Exiting the program. Goodbye!")
             break
 
+        # Starts the searching
         medication = search_medication(med_name, medications)
         if medication:
             display_medication_info(medication)
