@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Pain reliever",
+    "price": "2.5",
+    "name": "Panadol",
+    "active_ingredient": "Paracetamol"
+  },
+  {
+    "category": "Pain reliever",
+    "price": "3.4",
+    "name": "Paracetamol",
+    "active_ingredient": "Paracetamol"
+  },
+  {
+    "category": "Antibiotic",
+    "price": "5.5",
+    "name": "Augmentin",
+    "active_ingredient": "Amoxicillin"
+  },
+  {
+    "category": "Antibiotic",
+    "price": "5.8",
+    "name": "Klavox",
+    "active_ingredient": "Amoxicillin"
+  }
+]
